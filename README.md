@@ -1,27 +1,66 @@
----
-# Projeto Churn de Clientes - Telecom X
 
-## Descrição do Projeto
+## 📊 Análise de Evasão de Clientes - Telecom X
 
-Você foi contratado como assistente de análise de dados na Telecom X para atuar no projeto "Churn de Clientes". O objetivo principal é **entender os fatores que levam à perda de clientes (churn)**, uma vez que a empresa enfrenta um alto índice de cancelamentos.
-
-Neste desafio, você será responsável por **coletar, tratar e analisar os dados** utilizando Python e suas principais bibliotecas, a fim de extrair insights valiosos. Sua análise será fundamental para que a equipe de Data Science possa avançar na criação de modelos preditivos e no desenvolvimento de estratégias eficazes para **reduzir a evasão de clientes**.
-
-## Habilidades Praticadas
-
-Durante o desenvolvimento deste projeto, você terá a oportunidade de praticar e aprimorar as seguintes habilidades:
-
-* **Importação e Manipulação de Dados:** Eficiência na importação e manipulação de dados provenientes de uma API.
-* **ETL (Extração, Transformação e Carga):** Aplicação dos conceitos de ETL na preparação e limpeza dos dados.
-* **Visualização de Dados:** Criação de visualizações estratégicas para identificar padrões e tendências.
-* **Análise Exploratória de Dados (EDA):** Realização de uma Análise Exploratória de Dados completa e geração de um relatório com insights relevantes.
-
-## Como Contribuir
-
-1.  **Coleta de Dados:** Implementar a extração de dados da API fornecida.
-2.  **Transformação de Dados:** Realizar a limpeza, tratamento e preparação dos dados para análise.
-3.  **Análise Exploratória de Dados (EDA):** Conduzir a EDA para identificar correlações, distribuições e potenciais fatores de churn.
-4.  **Visualizações:** Desenvolver gráficos e dashboards que comuniquem os insights de forma clara e eficaz.
-5.  **Relatório de Insights:** Documentar as descobertas e insights obtidos, fornecendo recomendações para a próxima fase do projeto.
+Este projeto tem como objetivo analisar os dados de clientes da empresa **Telecom X** para identificar padrões de evasão (churn) e propor estratégias de retenção com base em dados reais.
 
 ---
+
+### 📁 Estrutura do Projeto
+
+- `telecomx_br.ipynb`: Notebook principal com todas as etapas do projeto.
+- Fonte dos dados: [TelecomX_Data.json](https://raw.githubusercontent.com/alura-cursos/challenge2-data-science/main/TelecomX_Data.json)
+
+---
+
+### 🚀 Etapas Realizadas
+
+#### 1. **Extração**
+- Leitura de dados em formato JSON diretamente do GitHub.
+
+#### 2. **Transformação**
+- Normalização de colunas aninhadas (`customer`, `phone`, `internet`, `account`).
+- Conversão de tipos de dados para análise numérica.
+- Tratamento de valores ausentes.
+
+#### 3. **Análise Exploratória**
+- Visualização da distribuição de churn.
+- Análise de churn por tipo de contrato e faixa etária.
+- Identificação de padrões relevantes para retenção de clientes.
+
+#### 4. **Conclusões**
+- Clientes com **contratos mensais** têm maior propensão ao churn.
+- **Idosos** (SeniorCitizen) também apresentam maior taxa de evasão.
+
+---
+
+### 📌 Principais Insights
+
+- Contratos de curto prazo estão fortemente associados à evasão.
+- Estratégias específicas podem ser aplicadas para públicos mais vulneráveis ao churn.
+
+---
+
+### 💡 Recomendações
+
+- Incentivar contratos de longo prazo com benefícios exclusivos.
+- Criar programas de suporte e fidelização para clientes idosos.
+- Monitorar continuamente os indicadores de churn para ações preventivas.
+
+---
+
+### 🛠️ Tecnologias Utilizadas
+
+- Python
+- Pandas
+- Seaborn & Matplotlib
+- Google Colab
+
+---
+
+### 📄 Relatório Final
+
+O relatório completo com gráficos e análises está disponível no notebook `telecomx_br.ipynb`.
+
+---
+
+
